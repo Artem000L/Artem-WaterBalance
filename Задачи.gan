@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="Внедрение" company="ООО &quot;Водичка&quot;" webLink="https://vodichka22.bitrix24.ru" view-date="2021-12-18" view-index="0" gantt-divider-location="651" resource-divider-location="355" version="3.1.3103" locale="ru_RU">
+    <description/>
+    <view zooming-state="default:0" id="gantt-chart">
+        <field id="tpd3" name="Название" width="435" order="0"/>
+        <field id="tpd4" name="Дата начала" width="86" order="1"/>
+        <field id="tpd5" name="Дата окончания" width="126" order="2"/>
+        <option id="color.recent">
+            <![CDATA[#74ff00 #00aaff #00d2ff #f4dc95 #ccffff #ccffcc #ffffcc #ffccff #6666ff #ffff66]]>
+        </option>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Имя" width="238" order="0"/>
+        <field id="1" name="Стандартная роль" width="113" order="1"/>
+    </view>
+    <!-- -->
+    <calendars>
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="0" mon="0" tue="0" wed="0" thu="0" fri="0" sat="0"/>
+            <only-show-weekends value="false"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="37" name="Разработка плана" color="#74ff00" meeting="false" start="2021-12-20" duration="1" complete="100" thirdDate="2021-12-18" thirdDate-constraint="0" expand="true">
+            <depend id="0" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="0" name="Оформление документов для отправки в сервисы для скачивания" color="#6666ff" meeting="false" start="2021-12-21" duration="1" complete="0" thirdDate="2021-12-09" thirdDate-constraint="0" expand="true">
+            <depend id="2" type="1" difference="0" hardness="Strong"/>
+        </task>
+        <task id="2" name="Подготовка маркетинговых материалов" color="#ffffcc" meeting="false" start="2021-12-21" duration="1" complete="0" thirdDate="2021-12-16" thirdDate-constraint="0" expand="true">
+            <depend id="7" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="7" name="Отправить сборку в сервисы для скачивания" color="#ccffcc" meeting="false" start="2021-12-22" duration="1" complete="0" thirdDate="2021-12-22" thirdDate-constraint="0" expand="true">
+            <depend id="10" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="10" name="Добавление приложения в общий доступ" color="#ccffff" meeting="false" start="2021-12-23" duration="1" complete="0" thirdDate="2021-12-16" thirdDate-constraint="0" expand="true">
+            <depend id="14" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="14" name="Обучение пользователей работе в приложении" color="#f4dc95" meeting="false" start="2021-12-24" duration="1" complete="0" thirdDate="2021-12-16" thirdDate-constraint="0" expand="true">
+            <depend id="26" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="26" name="Первичный анализ и оценка результатов деятельности" color="#00aaff" meeting="false" start="2021-12-25" duration="2" complete="0" thirdDate="2021-12-16" thirdDate-constraint="0" expand="true"/>
+    </tasks>
+    <resources>
+        <resource id="1" name="Цыганков Артем" function="2" contacts="" phone=""/>
+    </resources>
+    <allocations>
+        <allocation task-id="2" resource-id="1" function="1" responsible="true" load="100.0"/>
+        <allocation task-id="7" resource-id="1" function="1" responsible="true" load="100.0"/>
+        <allocation task-id="26" resource-id="1" function="1" responsible="true" load="100.0"/>
+        <allocation task-id="37" resource-id="1" function="2" responsible="true" load="100.0"/>
+    </allocations>
+    <vacations/>
+    <previous/>
+    <roles roleset-name="Default"/>
+    <roles>
+        <role id="1" name="Аналитик"/>
+        <role id="2" name="маркетолог"/>
+    </roles>
+</project>
